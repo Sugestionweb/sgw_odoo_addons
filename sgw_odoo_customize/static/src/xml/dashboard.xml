@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-extend="DashboardApps">
+        <t t-jquery=".o_web_settings_dashboard_pills" t-operation="replace">
+            <a href="https://www.sugestionweb.com" target="_blank" class="flex-grow-1 w-25"><i class="fa fa-lg fa-rocket text-muted"/> App store</a>
+            <a href="https://www.sugestionweb.com" target="_blank" class="flex-grow-1 w-25"><i class="fa fa-lg fa-picture-o text-muted"/> Theme store</a>
+        </t>
+    </t>
+</templates>
