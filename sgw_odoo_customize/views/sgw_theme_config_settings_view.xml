@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="view_app_theme_config_settings" model="ir.ui.view">
+        <record id="view_sgw_theme_config_settings" model="ir.ui.view">
             <field name="name">Odoo Customize Settings</field>
             <field name="model">res.config.settings</field>
             <field name="priority">20</field>
@@ -13,9 +13,9 @@
                     </header>
                     <h2>Config Settings</h2>
                     <group string="System">
-                        <label for="app_system_name"/>
+                        <label for="sgw_system_name"/>
                         <div>
-                            <field name="app_system_name"/>
+                            <field name="sgw_system_name"/>
                         </div>
                     </group>
                     <group string="User Menu">
@@ -23,49 +23,49 @@
                             <div class="col-12 col-lg-6 o_setting_box">
                                 <div class="col-12 col-lg-6 o_setting_box">
                                     <div>
-                                        <field name="app_show_lang"/>
-                                        <label for="app_show_lang"/>
+                                        <field name="sgw_show_lang"/>
+                                        <label for="sgw_show_lang"/>
                                     </div>
                                     <div>
-                                        <field name="app_show_debug"/>
-                                        <label for="app_show_debug"/>
+                                        <field name="sgw_show_debug"/>
+                                        <label for="sgw_show_debug"/>
                                     </div>
                                     <div>
-                                        <field name="app_show_documentation"/>
-                                        <label for="app_show_documentation"/>
+                                        <field name="sgw_show_documentation"/>
+                                        <label for="sgw_show_documentation"/>
                                     </div>
                                     <div>
-                                        <field name="app_show_documentation_dev"/>
-                                        <label for="app_show_documentation_dev"/>
+                                        <field name="sgw_show_documentation_dev"/>
+                                        <label for="sgw_show_documentation_dev"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 o_setting_box">
                                 <div class="col-12 col-lg-6 o_setting_box">
                                     <div>
-                                        <field name="app_show_support"/>
-                                        <label for="app_show_support"/>
+                                        <field name="sgw_show_support"/>
+                                        <label for="sgw_show_support"/>
                                     </div>
                                     <div>
-                                        <field name="app_show_account"/>
-                                        <label for="app_show_account"/>
+                                        <field name="sgw_show_account"/>
+                                        <label for="sgw_show_account"/>
                                     </div>
                                     <div invisible="1">
-                                        <field name="app_show_enterprise"/>
-                                        <label for="app_show_enterprise"/>
+                                        <field name="sgw_show_enterprise"/>
+                                        <label for="sgw_show_enterprise"/>
                                     </div>
 									<!-- Pendiente -->
                                     <div invisible="1">
-                                        <field name="app_show_share"/>
-                                        <label for="app_show_share"/>
+                                        <field name="sgw_show_share"/>
+                                        <label for="sgw_show_share"/>
                                     </div>
                                     <div>
-                                        <field name="app_show_poweredby"/>
-                                        <label for="app_show_poweredby"/>
+                                        <field name="sgw_show_poweredby"/>
+                                        <label for="sgw_show_poweredby"/>
                                     </div>
                                     <div invisible="1">
-                                        <field name="app_stop_subscribe"/>
-                                        <label for="app_stop_subscribe"/>
+                                        <field name="sgw_stop_subscribe"/>
+                                        <label for="sgw_stop_subscribe"/>
                                     </div>
                                     <div>
                                         <field name="group_show_author_in_apps"/>
@@ -76,29 +76,29 @@
                         </div>
                     </group>
                     <group string="User Menu Content">
-                        <label for="app_documentation_url"/>
+                        <label for="sgw_documentation_url"/>
                         <div>
-                            <field name="app_documentation_url"/>
+                            <field name="sgw_documentation_url"/>
                         </div>
-                        <label for="app_documentation_dev_url"/>
+                        <label for="sgw_documentation_dev_url"/>
                         <div>
-                            <field name="app_documentation_dev_url"/>
+                            <field name="sgw_documentation_dev_url"/>
                         </div>
-                        <label for="app_support_url"/>
+                        <label for="sgw_support_url"/>
                         <div>
-                            <field name="app_support_url"/>
+                            <field name="sgw_support_url"/>
                         </div>
-                        <label for="app_account_title"/>
+                        <label for="sgw_account_title"/>
                         <div>
-                            <field name="app_account_title"/>
+                            <field name="sgw_account_title"/>
                         </div>
-                        <label for="app_account_url"/>
+                        <label for="sgw_account_url"/>
                         <div>
-                            <field name="app_account_url"/>
+                            <field name="sgw_account_url"/>
                         </div>
-                        <label for="app_enterprise_url"/>
+                        <label for="sgw_enterprise_url"/>
                         <div>
-                            <field name="app_enterprise_url" class="oe_inline"/>
+                            <field name="sgw_enterprise_url" class="oe_inline"/>
                             <button string="Click to set" type="object" name="set_module_url" class="ml8 oe_highlight"/>
                         </div>
                     </group>
@@ -183,26 +183,26 @@
             </field>
         </record>
 
-        <record id="action_app_theme_config" model="ir.actions.act_window">
+        <record id="action_sgw_theme_config" model="ir.actions.act_window">
             <field name="name">Customize Odoo</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">res.config.settings</field>
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_app_theme_config_settings"/>
+            <field name="view_id" ref="view_sgw_theme_config_settings"/>
             <field name="target">inline</field>
         </record>
 
         <menuitem
-                id="base.menu_app_group"
+                id="base.menu_sgw_group"
                 name="Sugestionweb"
                 parent="base.menu_administration"
                 sequence="1"
                 groups="base.group_system"/>
         <menuitem
-                id="menu_app_theme_config"
-                parent="base.menu_app_group"
+                id="menu_sgw_theme_config"
+                parent="base.menu_sgw_group"
                 sequence="1"
-                action="action_app_theme_config"
+                action="action_sgw_theme_config"
                 groups="base.group_system"/>
     </data>
 </odoo>
