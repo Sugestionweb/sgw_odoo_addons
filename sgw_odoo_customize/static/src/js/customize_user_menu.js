@@ -63,10 +63,10 @@ odoo.define('app_odoo_customize.UserMenu', function (require) {
                     if (val.key == 'app_account_url')
                         account_url = val.value;
                     if (val.key == 'app_show_lang' && val.value == "False") {
-                        $('switch-lang').hide();
+                        $('[id="switch-lang"]').hide();
                     }
 
-                    if (session.user_context.uid > 2 || (val.key == 'app_show_debug' && val.value == "False")) {
+                    if (val.key == 'app_show_debug' && val.value == "False") {
                         $('[data-menu="debug"]').hide();
                         $('[data-menu="debugassets"]').hide();
                         $('[data-menu="quitdebug"]').hide();

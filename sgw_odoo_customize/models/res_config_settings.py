@@ -12,7 +12,7 @@ class ResConfigSettings(models.TransientModel):
 
     app_system_name = fields.Char('System Name', help=u"Setup System Name,which replace Odoo")
     app_show_lang = fields.Boolean('Show Quick Language Switcher',
-                                   help=u"When enable,User can quick switch language in user menu")
+                                   help=u"If this option is enabled,User can quick switch language in user menu")
     app_show_debug = fields.Boolean('Show Quick Debug', help=u"When enable,everyone login can see the debug menu")
     app_show_documentation = fields.Boolean('Show Documentation', help=u"When enable,User can visit user manual")
     app_show_documentation_dev = fields.Boolean('Show Developer Documentation',

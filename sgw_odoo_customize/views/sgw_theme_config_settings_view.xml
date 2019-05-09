@@ -12,13 +12,10 @@
                         <button string="Cancel" type="object" name="cancel" class="oe_link" special="cancel"/>
                     </header>
                     <h2>Config Settings</h2>
-                    <group string="System Name">
+                    <group string="System">
                         <label for="app_system_name"/>
                         <div>
                             <field name="app_system_name"/>
-                            <div>
-                                <a href="https://www.sugestionweb.com" target="_blank">Visit our website for more info and Support. https://www.sugestionweb.com</a>
-                            </div>
                         </div>
                     </group>
                     <group string="User Menu">
@@ -178,6 +175,10 @@
                                     confirm="Please confirm to delete the select data?" class="oe_highlight"/>
                         </div>
                     </div>
+                    <group string="About...">
+                        <strong><a href="https://www.sugestionweb.com" target="_blank">Visit our website for more info and Support. https://www.sugestionweb.com</a></strong>
+                    </group>
+                
                 </form>
             </field>
         </record>

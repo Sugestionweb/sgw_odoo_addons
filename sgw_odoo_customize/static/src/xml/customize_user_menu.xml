@@ -2,7 +2,7 @@
 <templates xml:space="preserve">
     <t t-extend="UserMenu.Actions">
         <t t-jquery="a[data-menu='documentation']" t-operation="before">
-            <switch-lang/>
+            <span id="switch-lang"><switch-lang/></span>
             <a role="menuitem" href="#" data-menu="debug" class="dropdown-item">Activate the developer mode</a>
             <a role="menuitem" href="#" data-menu="debugassets" class="dropdown-item">Activate the developer mode (with assets)</a>
             <a role="menuitem" href="#" data-menu="quitdebug" class="dropdown-item">Deactivate the developer mode</a>
