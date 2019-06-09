@@ -10,7 +10,7 @@ class MailThread(models.AbstractModel):
     @api.multi
     def message_subscribe(self, partner_ids=None, channel_ids=None, subtype_ids=None, force=True):
         ir_config = self.env['ir.config_parameter']
-        app_stop_subscribe = False if ir_config.get_param('app_stop_subscribe') == "True" else False
+        app_stop_subscribe = False if ir_config.get_param('sgw_stop_subscribe') == "True" else False
         if app_stop_subscribe:
             return
         else:
@@ -19,7 +19,7 @@ class MailThread(models.AbstractModel):
     @api.multi
     def message_auto_subscribe(self, updated_fields, values=None):
         ir_config = self.env['ir.config_parameter']
-        app_stop_subscribe = False if ir_config.get_param('app_stop_subscribe') == "True" else False
+        app_stop_subscribe = False if ir_config.get_param('sgw_stop_subscribe') == "True" else False
         if app_stop_subscribe:
             return
         else:
@@ -28,7 +28,7 @@ class MailThread(models.AbstractModel):
     @api.multi
     def _message_auto_subscribe_notify(self, partner_ids):
         ir_config = self.env['ir.config_parameter']
-        app_stop_subscribe = False if ir_config.get_param('app_stop_subscribe') == "True" else False
+        app_stop_subscribe = False if ir_config.get_param('sgw_stop_subscribe') == "True" else False
         if app_stop_subscribe:
             return
         else:
