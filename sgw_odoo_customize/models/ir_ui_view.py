@@ -14,5 +14,5 @@ class View(models.Model):
         if template in ['web.login', 'web.webclient_bootstrap']:
             if not values:
                 values = {}
-            values["title"] = self.env['ir.config_parameter'].sudo().get_param("app_system_name", "Sugestionweb")
+            values["title"] = self.env['ir.config_parameter'].sudo().get_param("sgw_system_name", "Sugestionweb")
         return super(View, self).render_template(template, values=values, engine=engine)
