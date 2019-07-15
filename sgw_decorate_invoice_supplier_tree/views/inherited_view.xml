@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="ir.ui.view" id="m_invoice_supplier_tree_view">
+		<field name="name">Purchase Quotation Inherited List View</field>
+		<field name="inherit_id" ref="account.invoice_supplier_tree" />
+		<field name="model">account.invoice</field>
+		<field name="arch" type="xml">
+			<tree position="replace">
+
+				<tree decoration-info="state == 'draft'"
+					decoration-muted="state == 'cancel'" decoration-bf="not partner_id"
+					decoration-warning="state =='open'" decoration-success="state=='paid'" string="Vendor Bill"
+					js_class="account_bills_tree">
+					<field name="partner_id" invisible="1" />
+					<field name="source_email" invisible="1" />
+					<field name="invoice_icon" string=" " />
+					<field name="vendor_display_name" groups="base.group_user"
+						string="Vendor" />
+					<field name="date_invoice" string="Bill Date" />
+					<field name="number" />
+					<field name="reference" />
+					<field name="commercial_partner_id" invisible="1" />
+					<field name="name" invisible="1" />
+					<field name="journal_id" invisible="1" />
+					<field name="company_id" groups="base.group_multi_company"
+						options="{'no_create': True}" />
+					<field name="date_due" />
+					<field name="origin" />
+					<field name="amount_untaxed" string="Tax Excluded"
+						sum="Total" />
+					<field name="amount_tax" sum="Total" />
+					<field name="amount_total_signed" string="Total" sum="Total" />
+					<field name="residual_signed" string="To Pay" sum="To pay" />
+					<field name="currency_id" invisible="1" />
+					<field name="company_currency_id" invisible="1" />
+					<field name="state" />
+					<field name="type" invisible="context.get('type',True)" />
+				</tree>
+			</tree>
+		</field>
+	</record>
+</odoo>
