@@ -1,36 +1,41 @@
 # -*- coding: utf-8 -*-
 
-# Created on 2019-07-30
+# Created on 2019-07-14
 # author: Javier https://www.sugestionweb.com
 # email: javier@sugestionweb.com
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 # Odoo12
+
+
 {
-    'name': 'SGW Pos Product List View',
+    'name': 'Decorate Sale Orders Tree',
     'version': '1.1.1.01',
     'author': 'Sugestionweb.com',
-    'category': 'Point Of Sale',
+    'category': 'Productivity',
     'website': 'https://www.sugestionweb.com',
     'license': 'AGPL-3',
     'sequence': 2,
     'summary': """    
-    This module modifies the screen of the products at the point of sale to see them in list mode. 
+    Customize the Sale orders tree to decorate the lines with diferent colors depending of the order status and invoiced status. 
     """,
     'description': """
-    This module modifies the screen of the products at the point of sale to see them in list mode, saving space and without displaying the image of the product.
+
     """,
-    'images': ['static/description/icon.png'],
+    'images': ['static/description/banner.gif'],
     'depends': [
-        'point_of_sale',
+        'base',
+        'sale'
         # 'digest',
         # when enterprise
         # 'web_mobile'
     ],
     'data': [
-        'views/point_of_sale_assets.xml',
+        'views/inherited_so.xml',
     ],
-    'qweb': ['static/xml/pos.xml'],
+    'qweb': [
+        'static/src/xml/*.xml',
+    ],
     'demo': [],
     'test': [],
     'css': [],

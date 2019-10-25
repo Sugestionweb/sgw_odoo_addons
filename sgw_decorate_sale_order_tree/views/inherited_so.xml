@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <record model="ir.ui.view" id="m_sale_order_tree_view">
+        <field name="name">Sale Order Inherited List View</field>
+          <field name="inherit_id" ref="sale.view_order_tree" /> 
+        <field name="model">sale.order</field>
+            <field name="arch" type="xml">
+                <tree position="attributes">
+                    <attribute name="decoration-muted">state=='cancel'</attribute>
+                    <attribute name="decoration-info">state in ('wait','confirmed','draft')</attribute>
+                    <attribute name="decoration-success">invoice_status=='invoiced'</attribute>
+                    <attribute name="decoration-warning">invoice_status=='to invoice'</attribute>
+                </tree>
+                <field name="confirmation_date" position="before">
+                	<field name="date_order"></field>
+                </field>
+                
+                
+            </field>
+            
+    </record>
+     <record model="ir.ui.view" id="m_sale_quotation_tree_view">
+        <field name="name">Sale Quotation Inherited List View</field>
+          <field name="inherit_id" ref="sale.view_quotation_tree" /> 
+        <field name="model">sale.order</field>
+            <field name="arch" type="xml">
+                <tree position="attributes">
+                    <attribute name="decoration-muted">state=='cancel'</attribute>
+                    <attribute name="decoration-info">state in ('wait','confirmed','draft')</attribute>
+                    <attribute name="decoration-success">state=='sale'</attribute>
+                </tree>
+            </field>
+    </record>
+    
+</odoo>

@@ -13,6 +13,7 @@
                         <th>UM</th>
                         <th class="text-right"><span class="text-right">Price</span></th>
                         <th class="text-right"><h4>Disponible</h4></th>
+                        <th class="text-right"><h4>Previsto</h4></th>
                     </tr>
                 </thead>
                 <tbody class='product-list-contents'>
@@ -51,7 +52,14 @@
                     	<t t-esc="product.qty_available"/>
                     </span>
                 </td>
+                <td class="text-right">
+                    <span class="vqty-tag text-right">
+                    	<t t-esc="product.virtual_available"/>
+                    </span>
+                </td>
+
             </tr>
+            
         </t>
     </t>
 </templates>
