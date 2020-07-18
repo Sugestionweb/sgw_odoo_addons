@@ -89,3 +89,7 @@ class SgwPartner(models.Model):
 #              "Use this field anywhere a small image is required.")
 #     # hack to allow using plain browse record in qweb views, and used in ir.qweb.field.contact
 #     self = fields.Many2one(comodel_name=_name, compute='_compute_get_ids')
+
+    property_payment_term_id = fields.Many2one(track_visibility = 'onchange')
+    customer_payment_mode_id = fields.Many2one(track_visibility = 'onchange')
+    
