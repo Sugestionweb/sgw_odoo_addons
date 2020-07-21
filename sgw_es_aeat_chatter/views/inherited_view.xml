@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="sgwview_l10n_es_aeat_mod130_report_form"
+		model="ir.ui.view">
+		<field name="name">sgw_l10n_es.aeat.mod130.report.form</field>
+		<field name="model">l10n.es.aeat.mod130.report</field>
+		<field name="inherit_id"
+			ref="l10n_es_aeat_mod130.view_l10n_es_aeat_mod130_report_form" />
+		<field name="arch" type="xml">
+			<xpath expr="//sheet" position="after">
+				<div class="oe_chatter">
+					<field name="message_follower_ids" widget="mail_followers"
+						groups="base.group_user" />
+					<field name="message_ids" widget="mail_thread" />
+				</div>
+			</xpath>
+		</field>
+	</record>
+</odoo>
+
