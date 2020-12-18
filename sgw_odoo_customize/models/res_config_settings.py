@@ -10,22 +10,31 @@ _logger = logging.getLogger(__name__)
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    sgw_system_name = fields.Char('System Name', help=u"Setup System Name,which replace Odoo")
+    sgw_system_name = fields.Char('System Name',
+                                  help=u"Setup System Name,which replace Odoo")
     sgw_show_lang = fields.Boolean('Show Quick Language Switcher',
                                    help=u"If this option is enabled,User can quick switch language in user menu")
-    sgw_show_debug = fields.Boolean('Show Quick Debug', help=u"When enable,everyone login can see the debug menu")
-    sgw_show_documentation = fields.Boolean('Show Documentation', help=u"When enable,User can visit user manual")
+    sgw_show_debug = fields.Boolean('Show Quick Debug',
+                                    help=u"When enable,everyone login can see the debug menu")
+    sgw_show_documentation = fields.Boolean('Show Documentation',
+                                            help=u"When enable,User can visit user manual")
     sgw_show_documentation_dev = fields.Boolean('Show Developer Documentation',
                                                 help=u"When enable,User can visit development documentation")
-    sgw_show_support = fields.Boolean('Show Support', help=u"When enable,User can visit your support site")
-    sgw_show_account = fields.Boolean('Show My Account', help=u"When enable,User can login to your website")
-    sgw_show_enterprise = fields.Boolean('Show Enterprise Tag', help=u"Uncheck to hide the Enterprise tag")
-    sgw_show_share = fields.Boolean('Show Share Dashboard', help=u"Uncheck to hide the Odoo Share Dashboard")
-    sgw_show_poweredby = fields.Boolean('Show Powered by Odoo', help=u"Uncheck to hide the Powered by text")
-    sgw_stop_subscribe = fields.Boolean('Stop Odoo Subscribe(Performance Improve)', help=u"Check to stop Odoo Subscribe function")
-    group_show_author_in_apps = fields.Boolean(string="Show Author in Apps Dashboard", implied_group='sgw_odoo_customize.group_show_author_in_apps',
+    sgw_show_support = fields.Boolean('Show Support', 
+                                      help=u"When enable,User can visit your support site")
+    sgw_show_account = fields.Boolean('Show My Account', 
+                                      help=u"When enable,User can login to your website")
+    sgw_show_enterprise = fields.Boolean('Show Enterprise Tag', 
+                                         help=u"Uncheck to hide the Enterprise tag")
+    sgw_show_share = fields.Boolean('Show Share Dashboard', 
+                                    help=u"Uncheck to hide the Odoo Share Dashboard")
+    sgw_show_poweredby = fields.Boolean('Show Powered by Odoo', 
+                                        help=u"Uncheck to hide the Powered by text")
+    sgw_stop_subscribe = fields.Boolean('Stop Odoo Subscribe(Performance Improve)', 
+                                        help=u"Check to stop Odoo Subscribe function")
+    group_show_author_in_apps = fields.Boolean(string="Show Author in Apps Dashboard", 
+                                               implied_group='sgw_odoo_customize.group_show_author_in_apps',
                                                help=u"Uncheck to Hide Author and Website in Apps Dashboard")
-
     sgw_documentation_url = fields.Char('Documentation Url')
     sgw_documentation_dev_url = fields.Char('Developer Documentation Url')
     sgw_support_url = fields.Char('Support Url')
@@ -37,7 +46,8 @@ class ResConfigSettings(models.TransientModel):
     def get_values(self):
         res = super(ResConfigSettings, self).get_values()
         ir_config = self.env['ir.config_parameter'].sudo()
-        sgw_system_name = ir_config.get_param('sgw_system_name', default='odooApp')
+        sgw_system_name = ir_config.get_param('sgw_system_name',
+                                              default='odooApp')
 
         sgw_show_lang = True if ir_config.get_param('sgw_show_lang') == "True" else False
         sgw_show_debug = True if ir_config.get_param('sgw_show_debug') == "True" else False
@@ -417,8 +427,10 @@ class ResConfigSettings(models.TransientModel):
                     self._cr.execute(sql)
 
             # reset default tax，
-            field1 = self.env['ir.model.fields']._get('product.template', "taxes_id").id
-            field2 = self.env['ir.model.fields']._get('product.template', "supplier_taxes_id").id
+            field1 = self.env['ir.model.fields']._get('product.template',
+                                                      "taxes_id").id
+            field2 = self.env['ir.model.fields']._get('product.template',
+                                                      "supplier_taxes_id").id
 
             sql = ("delete from ir_default where field_id = %s or field_id = %s") % (field1, field2)
             self._cr.execute(sql)

@@ -29,23 +29,10 @@
             <field name="key">sgw_show_account</field>
             <field name="value">True</field>
         </record>
-        <record id="sgw_show_enterprise" model="ir.config_parameter">
-            <field name="key">sgw_show_enterprise</field>
-            <field name="value">False</field>
-        </record>
-        <record id="sgw_show_share" model="ir.config_parameter">
-            <field name="key">sgw_show_share</field>
-            <field name="value">False</field>
-        </record>
         <record id="sgw_show_poweredby" model="ir.config_parameter">
             <field name="key">sgw_show_poweredby</field>
             <field name="value">False</field>
         </record>
-        <record id="sgw_stop_subscribe" model="ir.config_parameter">
-            <field name="key">sgw_stop_subscribe</field>
-            <field name="value">False</field>
-        </record>
-
         <record id="sgw_documentation_url" model="ir.config_parameter">
             <field name="key">sgw_documentation_url</field>
             <field name="value">https://www.sugestionweb.com/forum/how-to</field>

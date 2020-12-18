@@ -1,21 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* sgw_odoo_customize
+#	* sgw_odoo_customize
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-09 20:14+0000\n"
-"PO-Revision-Date: 2019-05-09 23:03+0200\n"
+"POT-Creation-Date: 2020-12-17 18:34+0000\n"
+"PO-Revision-Date: 2020-12-17 18:34+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
-"Language: es_ES\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: sgw_odoo_customize
 #: model_terms:ir.ui.view,arch_db:sgw_odoo_customize.view_sgw_theme_config_settings
@@ -142,8 +140,9 @@ msgstr "Personalizar Odoo"
 
 #. module: sgw_odoo_customize
 #: model_terms:ir.ui.view,arch_db:sgw_odoo_customize.view_sgw_theme_config_settings
-msgid "Data Cleaning (Be careful to do that!)"
-msgstr "Limpieza de Datos (¡Cuidado con esto!)"
+msgid "Data Cleaning (Be careful to do\n"
+"							that!)"
+msgstr "Limpieza de datos (¡Cuidado!)"
 
 #. module: sgw_odoo_customize
 #. openerp-web
@@ -343,7 +342,7 @@ msgstr "Detener Odoo Suscribirse (Mejora del rendimiento)"
 #. module: sgw_odoo_customize
 #: model_terms:ir.ui.view,arch_db:sgw_odoo_customize.brand_promotion
 msgid "Sugestionweb"
-msgstr "Sugestionweb"
+msgstr ""
 
 #. module: sgw_odoo_customize
 #: model:ir.model.fields,field_description:sgw_odoo_customize.field_res_config_settings__sgw_support_url
@@ -388,16 +387,6 @@ msgid "Uncheck to hide the Powered by text"
 msgstr "Desmarque para ocultar el texto Powered by"
 
 #. module: sgw_odoo_customize
-#: model_terms:ir.ui.view,arch_db:sgw_odoo_customize.sgw_module_view_kanban
-msgid "Uninstall"
-msgstr "Desinstalar"
-
-#. module: sgw_odoo_customize
-#: model_terms:ir.ui.view,arch_db:sgw_odoo_customize.sgw_module_view_kanban
-msgid "Upgrade"
-msgstr "Actualizar"
-
-#. module: sgw_odoo_customize
 #: model_terms:ir.ui.view,arch_db:sgw_odoo_customize.view_sgw_theme_config_settings
 msgid "User Menu"
 msgstr "Menu de usuario"
@@ -414,7 +403,8 @@ msgstr "Ver"
 
 #. module: sgw_odoo_customize
 #: model_terms:ir.ui.view,arch_db:sgw_odoo_customize.view_sgw_theme_config_settings
-msgid "Visit our website for more info and Support. https://www.sugestionweb.com"
+msgid "Visit our website\n"
+"								for more info and Support. https://www.sugestionweb.com"
 msgstr "Visite nuestro sitio web para más información y soporte: https://www.sugestionweb.com"
 
 #. module: sgw_odoo_customize
@@ -446,3 +436,4 @@ msgstr "Cuando se habilita, todos los usuarios pueden ver el menú de depuració
 #: model_terms:ir.ui.view,arch_db:sgw_odoo_customize.view_sgw_theme_config_settings
 msgid "odooApp Customize Settings"
 msgstr "Opciones de Configuración"
+

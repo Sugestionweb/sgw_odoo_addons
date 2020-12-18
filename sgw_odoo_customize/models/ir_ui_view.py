@@ -6,6 +6,7 @@ from odoo import api, fields, models, _
 
 _logger = logging.getLogger(__name__)
 
+
 class View(models.Model):
     _inherit = 'ir.ui.view'
 
