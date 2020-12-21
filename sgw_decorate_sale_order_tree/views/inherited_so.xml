@@ -8,8 +8,9 @@
       <tree position="attributes">
         <attribute name="decoration-muted">state=='cancel'
                 </attribute>
-        <attribute name="decoration-info">state in
-                    ('wait','confirmed','draft')</attribute>
+        <attribute
+          name="decoration-info"
+        >state in ('wait','confirmed','draft')</attribute>
         <attribute name="decoration-success">invoice_status=='invoiced'
                 </attribute>
         <attribute name="decoration-warning">invoice_status=='to invoice'
@@ -26,12 +27,11 @@
     <field name="model">sale.order</field>
     <field name="arch" type="xml">
       <tree position="attributes">
-        <attribute name="decoration-muted">state=='cancel'
-                </attribute>
-        <attribute name="decoration-info">state in
-                    ('wait','confirmed','draft')</attribute>
-        <attribute name="decoration-success">state=='sale'
-                </attribute>
+        <attribute name="decoration-muted">state=='cancel'</attribute>
+        <attribute
+          name="decoration-info"
+        >state in ('wait','confirmed','draft')</attribute>
+        <attribute name="decoration-success">state=='sale'</attribute>
       </tree>
     </field>
   </record>

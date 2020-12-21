@@ -33,6 +33,6 @@
     "css": [],
     "js": [],
     "installable": True,
-    "application": True,
+    "application": False,
     "auto_install": True,
 }
