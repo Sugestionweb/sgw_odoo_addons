@@ -1,4 +1,8 @@
 <?xml version="1.0"?>
+<!--
+  # (c) 2020 Sugestionweb.com -  javier@sugestionweb.com
+  # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
+-->
 <openerp>
     <data noupdate="0">
         <record id="sgw_system_name" model="ir.config_parameter">

@@ -14,6 +14,3 @@ Odoo**
 - **Modify the user menu** by removing links to ODOO and customization of several links 
   to documentation, profile, etc.
 - **Quick data cleaning**, allows you to delete all orders, movements, purchase orders, invoices, etc. with one click.
-
-
-

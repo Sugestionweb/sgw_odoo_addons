@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+ # (c) 2020 Sugestionweb.com -  javier@sugestionweb.com
+ # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
+-->
 <templates xml:space="preserve">
     <t t-extend="DashboardApps">
         <t t-jquery=".o_web_settings_dashboard_pills" t-operation="replace">
