@@ -1,34 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
- # (c) 2020 Sugestionweb.com -  javier@sugestionweb.com
- # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
--->
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- # (c) 2020 Sugestionweb.com - javier@sugestionweb.com # License AGPL-3
+    - See http://www.gnu.org/licenses/agpl-3.0.html -->
 <odoo>
-	<template id="brand_promotion" name="Brand Promotion">
-    	<div class="o_brand_promotion">
-        	Powered by <a target="_blank" href="http://www.sugestionweb.com">Sugestionweb</a>
-    	</div>
-	</template>
-	
-<!-- 	<template id="website.layout_footer_copyright" inherit_id="website.layout" name="Footer Copyright"> -->
-<!-- 	    <xpath expr="//footer" position="inside"> -->
-<!-- 	        <div class="o_footer_copyright"> -->
-<!-- 	            <div class="container"> -->
-<!-- 	                <div class="row"> -->
-<!-- 	                    <div class="col-lg-6 text-muted text-center text-md-left"> -->
-<!-- 	                        <span>Copyright &amp;copy;</span> <span t-field="res_company.name" itemprop="name">Company name</span> -->
-<!-- 	                        <t t-call="website.language_selector"/> -->
-<!-- 	                    </div> -->
-<!-- 	                    <div class="col-lg-6 text-right o_not_editable" t-if="not editable"> -->
-<!-- 	                        <t t-call="sgw_odoo_customize.brand_promotion"/> -->
-<!-- 	                    </div> -->
-<!-- 	                </div> -->
-<!-- 	            </div> -->
-<!-- 	        </div> -->
-<!-- 	    </xpath> -->
-<!-- 	</template> -->
-	
-	
-	
-	
+  <template id="brand_promotion" name="Brand Promotion">
+    <div class="o_brand_promotion">
+            Powered by
+            <a target="_blank" href="http://www.sugestionweb.com">Sugestionweb
+            </a>
+        </div>
+  </template>
+  <!-- <template id="website.layout_footer_copyright" inherit_id="website.layout"
+        name="Footer Copyright"> -->
+  <!-- <xpath expr="//footer" position="inside"> -->
+  <!-- <div class="o_footer_copyright"> -->
+  <!-- <div class="container"> -->
+  <!-- <div class="row"> -->
+  <!-- <div class="col-lg-6 text-muted text-center text-md-left"> -->
+  <!-- <span>Copyright &amp;copy;</span> <span t-field="res_company.name"
+        itemprop="name">Company name</span> -->
+  <!-- <t t-call="website.language_selector"/> -->
+  <!-- </div> -->
+  <!-- <div class="col-lg-6 text-right o_not_editable" t-if="not editable"> -->
+  <!-- <t t-call="sgw_odoo_customize.brand_promotion"/> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </xpath> -->
+  <!-- </template> -->
 </odoo>

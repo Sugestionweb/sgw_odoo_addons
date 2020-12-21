@@ -1,61 +1,61 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <!--
   # (c) 2020 Sugestionweb.com -  javier@sugestionweb.com
   # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 -->
 <openerp>
-    <data noupdate="0">
-        <record id="sgw_system_name" model="ir.config_parameter">
-            <field name="key">sgw_system_name</field>
-            <field name="value">Sugestionweb</field>
-        </record>
-        <record id="sgw_show_lang" model="ir.config_parameter">
-            <field name="key">sgw_show_lang</field>
-            <field name="value">True</field>
-        </record>
-        <record id="sgw_show_debug" model="ir.config_parameter">
-            <field name="key">sgw_show_debug</field>
-            <field name="value">True</field>
-        </record>
-        <record id="sgw_show_documentation" model="ir.config_parameter">
-            <field name="key">sgw_show_documentation</field>
-            <field name="value">True</field>
-        </record>
-        <record id="sgw_show_documentation_dev" model="ir.config_parameter">
-            <field name="key">sgw_show_documentation_dev</field>
-            <field name="value">True</field>
-        </record>
-        <record id="sgw_show_support" model="ir.config_parameter">
-            <field name="key">sgw_show_support</field>
-            <field name="value">True</field>
-        </record>
-        <record id="sgw_show_account" model="ir.config_parameter">
-            <field name="key">sgw_show_account</field>
-            <field name="value">True</field>
-        </record>
-        <record id="sgw_show_poweredby" model="ir.config_parameter">
-            <field name="key">sgw_show_poweredby</field>
-            <field name="value">False</field>
-        </record>
-        <record id="sgw_documentation_url" model="ir.config_parameter">
-            <field name="key">sgw_documentation_url</field>
-            <field name="value">https://www.sugestionweb.com/forum/how-to</field>
-        </record>
-        <record id="sgw_documentation_dev_url" model="ir.config_parameter">
-            <field name="key">sgw_documentation_dev_url</field>
-            <field name="value">https://www.sugestionweb.com/forum/how-to</field>
-        </record>
-        <record id="sgw_support_url" model="ir.config_parameter">
-            <field name="key">sgw_support_url</field>
-            <field name="value">https://soporte.sugestionweb.com/</field>
-        </record>
-        <record id="sgw_account_title" model="ir.config_parameter">
-            <field name="key">sgw_account_title</field>
-            <field name="value">Mi cuenta en Sugestionweb</field>
-        </record>
-        <record id="sgw_account_url" model="ir.config_parameter">
-            <field name="key">sgw_account_url</field>
-            <field name="value">https://www.sugestionweb.com/my/account</field>
-        </record>
-    </data>
+  <data noupdate="0">
+    <record id="sgw_system_name" model="ir.config_parameter">
+      <field name="key">sgw_system_name</field>
+      <field name="value">Sugestionweb</field>
+    </record>
+    <record id="sgw_show_lang" model="ir.config_parameter">
+      <field name="key">sgw_show_lang</field>
+      <field name="value">True</field>
+    </record>
+    <record id="sgw_show_debug" model="ir.config_parameter">
+      <field name="key">sgw_show_debug</field>
+      <field name="value">True</field>
+    </record>
+    <record id="sgw_show_documentation" model="ir.config_parameter">
+      <field name="key">sgw_show_documentation</field>
+      <field name="value">True</field>
+    </record>
+    <record id="sgw_show_documentation_dev" model="ir.config_parameter">
+      <field name="key">sgw_show_documentation_dev</field>
+      <field name="value">True</field>
+    </record>
+    <record id="sgw_show_support" model="ir.config_parameter">
+      <field name="key">sgw_show_support</field>
+      <field name="value">True</field>
+    </record>
+    <record id="sgw_show_account" model="ir.config_parameter">
+      <field name="key">sgw_show_account</field>
+      <field name="value">True</field>
+    </record>
+    <record id="sgw_show_poweredby" model="ir.config_parameter">
+      <field name="key">sgw_show_poweredby</field>
+      <field name="value">False</field>
+    </record>
+    <record id="sgw_documentation_url" model="ir.config_parameter">
+      <field name="key">sgw_documentation_url</field>
+      <field name="value">https://www.sugestionweb.com/forum/how-to</field>
+    </record>
+    <record id="sgw_documentation_dev_url" model="ir.config_parameter">
+      <field name="key">sgw_documentation_dev_url</field>
+      <field name="value">https://www.sugestionweb.com/forum/how-to</field>
+    </record>
+    <record id="sgw_support_url" model="ir.config_parameter">
+      <field name="key">sgw_support_url</field>
+      <field name="value">https://soporte.sugestionweb.com/</field>
+    </record>
+    <record id="sgw_account_title" model="ir.config_parameter">
+      <field name="key">sgw_account_title</field>
+      <field name="value">Mi cuenta en Sugestionweb</field>
+    </record>
+    <record id="sgw_account_url" model="ir.config_parameter">
+      <field name="key">sgw_account_url</field>
+      <field name="value">https://www.sugestionweb.com/my/account</field>
+    </record>
+  </data>
 </openerp>

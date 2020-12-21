@@ -1,17 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
  # (c) 2020 Sugestionweb.com -  javier@sugestionweb.com
  # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 -->
 <templates xml:space="preserve">
-    <t t-extend="UserMenu.Actions">
-        <t t-jquery="a[data-menu='documentation']" t-operation="before">
-            <span id="switch-lang"><switch-lang/></span>
-            <a role="menuitem" href="#" data-menu="debug" class="dropdown-item">Activate the developer mode</a>
-            <a role="menuitem" href="#" data-menu="debugassets" class="dropdown-item">Activate the developer mode (with assets)</a>
-            <a role="menuitem" href="#" data-menu="quitdebug" class="dropdown-item">Deactivate the developer mode</a>
-            <div role="separator" class="dropdown-divider"/>
-            <a role="menuitem" href="#" data-menu="documentation_dev" class="dropdown-item">Developer Manual</a>
-        </t>
+  <t t-extend="UserMenu.Actions">
+    <t t-jquery="a[data-menu='documentation']" t-operation="before">
+      <span id="switch-lang">
+        <switch-lang />
+      </span>
+      <a
+        role="menuitem"
+        href="#"
+        data-menu="debug"
+        class="dropdown-item"
+      >Activate the developer mode</a>
+      <a
+        role="menuitem"
+        href="#"
+        data-menu="debugassets"
+        class="dropdown-item"
+      >Activate the developer mode (with assets)</a>
+      <a
+        role="menuitem"
+        href="#"
+        data-menu="quitdebug"
+        class="dropdown-item"
+      >Deactivate the developer mode</a>
+      <div role="separator" class="dropdown-divider" />
+      <a
+        role="menuitem"
+        href="#"
+        data-menu="documentation_dev"
+        class="dropdown-item"
+      >Developer Manual</a>
     </t>
+  </t>
 </templates>

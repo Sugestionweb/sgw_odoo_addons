@@ -1,38 +1,38 @@
-
 /*  the search box */
 div.searchbox input {
-    width: 400px!important;
+  width: 400px !important;
 }
 
-/* /*  ********* The product list  ********* */ */
-.pos .product-list-container .product-list{
-    font-size: 13px;
-    width: 100%;
+/* /*  ********* The product list  ********* */
+*/ .pos .product-list-container .product-list {
+  font-size: 13px;
+  width: 100%;
 }
 .pos .product-list-container .product-list th,
 .pos .product-list-container .product-list td {
-    padding: 0px 8px;
-    cursor:pointer;
+  padding: 0px 8px;
+  cursor: pointer;
 }
-.pos .product-list-container .product-list tr{
-    transition: all 150ms linear;
-    background: rgb(230,230,230);
-	font-size: medium;
-    
+.pos .product-list-container .product-list tr {
+  transition: all 150ms linear;
+  background: rgb(230, 230, 230);
+  font-size: medium;
 }
 
 .pos .product-list-container .product-list tbody .hover_row:hover {
-	
-	background: #6EC89B;
-	color: #ffffff
-	
+  background: #6ec89b;
+  color: #ffffff;
 }
 
 .pos .product-list-container .product-list thead > tr,
 .pos .product-list-container .product-list tbody > tr:nth-child(even) {
-    background: rgb(247,247,247);
+  background: rgb(247, 247, 247);
 }
 
-table.product-list {width:99%;}
+table.product-list {
+  width: 99%;
+}
 
-.text-right {text-align:right;}
+.text-right {
+  text-align: right;
+}

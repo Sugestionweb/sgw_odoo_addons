@@ -1,65 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <templates id="template" xml:space="preserve">
-    <t t-name="ProductListWidget">
-        <t t-jquery="div.product-list-container" t-operation="extend">
-            <div class='product-list-container'>
-            <div class="product-list-scroller touch-scrollable">
-                <table class="product-list hoverTable">
-                <thead>
-                    <tr style="line-height: 4px !important;">
-                        <!-- <th><h3>Image</h3></th> -->
-                        <th>Name</th>
-                        <th>Code</th>
-                        <th>UM</th>
-                        <th class="text-right"><span class="text-right">Price</span></th>
-                        <th class="text-right"><h4>Disponible</h4></th>
-                        <th class="text-right"><h4>Previsto</h4></th>
-                    </tr>
-                </thead>
-                <tbody class='product-list-contents'>
+  <t t-name="ProductListWidget">
+    <t t-jquery="div.product-list-container" t-operation="extend">
+      <div class='product-list-container'>
+        <div class="product-list-scroller touch-scrollable">
+          <table class="product-list hoverTable">
+            <thead>
+              <tr style="line-height: 4px !important;">
+                <!-- <th><h3>Image</h3></th> -->
+                <th>Name</th>
+                <th>Code</th>
+                <th>UM</th>
+                <th class="text-right">
+                  <span class="text-right">Price</span>
+                </th>
+                <th class="text-right">
+                  <h4>Disponible</h4>
+                </th>
+                <th class="text-right">
+                  <h4>Previsto</h4>
+                </th>
+              </tr>
+            </thead>
+            <tbody class='product-list-contents'>
                 </tbody>
-                </table>
-            </div>
-            <span class="placeholder-ScrollbarWidget" />
+          </table>
         </div>
-        </t>    
+        <span class="placeholder-ScrollbarWidget" />
+      </div>
     </t>
-    <t t-extend="Product">
-        <t t-jquery="article.product" t-operation="replace">
-            <tr class='product-list hover_row' t-att-data-product-id="product.id" tabindex="0" t-attf-aria-labelledby="article_product_#{product.id}">
-               <!-- <td>
-                    <img t-att-src='image_url' height='45px'/> 
+  </t>
+  <t t-extend="Product">
+    <t t-jquery="article.product" t-operation="replace">
+      <tr
+        class='product-list hover_row'
+        t-att-data-product-id="product.id"
+        tabindex="0"
+        t-attf-aria-labelledby="article_product_#{product.id}"
+      >
+        <!-- <td>
+                    <img t-att-src='image_url' height='45px'/>
                 </td> -->
-                <td>
-                    <t t-esc="product.display_name"/>
-                </td>
-                <td>
-                	<t t-esc="product.default_code"/>
-               
-                </td>
-                <td>
-                    <span t-if="!product.to_weight">
-                       <t t-esc="widget.pos.units_by_id[product.uom_id[0]].name"/>
-                    </span>
-                </td>
-                <td class="text-right">
-                    <span class="price-tag text-right">
-                        <t t-esc="widget.format_currency(product.list_price,'Product Price')"/>
-                    </span>
-                </td>
-                <td class="text-right">
-                    <span class="qty-tag text-right">
-                    	<t t-esc="product.qty_available"/>
-                    </span>
-                </td>
-                <td class="text-right">
-                    <span class="vqty-tag text-right">
-                    	<t t-esc="product.virtual_available"/>
-                    </span>
-                </td>
-
-            </tr>
-            
-        </t>
+        <td>
+          <t t-esc="product.display_name" />
+        </td>
+        <td>
+          <t t-esc="product.default_code" />
+        </td>
+        <td>
+          <span t-if="!product.to_weight">
+            <t t-esc="widget.pos.units_by_id[product.uom_id[0]].name" />
+          </span>
+        </td>
+        <td class="text-right">
+          <span class="price-tag text-right">
+            <t t-esc="widget.format_currency(product.list_price,'Product Price')" />
+          </span>
+        </td>
+        <td class="text-right">
+          <span class="qty-tag text-right">
+            <t t-esc="product.qty_available" />
+          </span>
+        </td>
+        <td class="text-right">
+          <span class="vqty-tag text-right">
+            <t t-esc="product.virtual_available" />
+          </span>
+        </td>
+      </tr>
     </t>
+  </t>
 </templates>

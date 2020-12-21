@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 # Created on 2019-07-30
 # author: Javier https://www.sugestionweb.com
 # email: javier@sugestionweb.com
@@ -7,37 +5,31 @@
 
 # Odoo12
 {
-    'name': 'SGW Pos Product List View',
-    'version': '1.1.1.01',
-    'author': 'Sugestionweb.com',
-    'category': 'Point Of Sale',
-    'website': 'https://www.sugestionweb.com',
-    'license': 'AGPL-3',
-    'sequence': 2,
-    'summary': """    
-    This module modifies the screen of the products at the point of sale to see them in list mode. 
+    "name": "SGW Pos Product List View",
+    "version": "12.0.0.1.0",
+    "author": "Sugestionweb.com",
+    "category": "Point Of Sale",
+    "website": "https://www.sugestionweb.com",
+    "license": "AGPL-3",
+    "sequence": 2,
+    "summary": """
+    This module modifies the screen of the products at the point of sale to see
+    them in list mode.
     """,
-    'description': """
-    This module modifies the screen of the products at the point of sale to see them in list mode, saving space and without displaying the image of the product.
-    """,
-    'images': ['static/description/icon.png'],
-    'depends': [
-        'point_of_sale',
+    "images": ["static/description/icon.png"],
+    "depends": [
+        "point_of_sale",
         # 'digest',
         # when enterprise
         # 'web_mobile'
     ],
-    'data': [
-        'views/point_of_sale_assets.xml',
-    ],
-    'qweb': ['static/xml/pos.xml'],
-    'demo': [],
-    'test': [],
-    'css': [],
-    'js': [],
-    'pre_init_hook': 'pre_init_hook',
-    'post_init_hook': 'post_init_hook',
-    'installable': True,
-    'application': True,
-    'auto_install': True,
+    "data": ["views/point_of_sale_assets.xml"],
+    "qweb": ["static/xml/pos.xml"],
+    "demo": [],
+    "test": [],
+    "css": [],
+    "js": [],
+    "installable": True,
+    "application": True,
+    "auto_install": True,
 }

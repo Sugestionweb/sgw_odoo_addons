@@ -1,12 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <data>
-        <template id="assets" inherit_id="point_of_sale.assets">
-            <xpath expr="." position="inside">
-                <link rel="stylesheet" type="text/css" href="/sgw_pos_product_list_view/static/css/pos.css" id='asset_css' />
-                <script type="text/javascript" src="/sgw_pos_product_list_view/static/js/models.js"></script>
-                <script type="text/javascript" src="/sgw_pos_product_list_view/static/js/screens.js"></script>
-            </xpath>
-        </template>
-    </data>
+  <data>
+    <template id="assets" inherit_id="point_of_sale.assets">
+      <xpath expr="." position="inside">
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="/sgw_pos_product_list_view/static/css/pos.css"
+          id='asset_css'
+        />
+        <script
+          type="text/javascript"
+          src="/sgw_pos_product_list_view/static/js/models.js"
+        />
+        <script
+          type="text/javascript"
+          src="/sgw_pos_product_list_view/static/js/screens.js"
+        />
+      </xpath>
+    </template>
+  </data>
 </odoo>
