@@ -3,9 +3,6 @@
 # email: javier@sugestionweb.com
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-# Odoo12
-
-
 {
     "name": "Decorate Purchase Orders Tree",
     "version": "12.0.0.1.0",
@@ -19,13 +16,7 @@
     colors depending of the order status and invoiced status.
     """,
     "images": ["static/description/banner.gif"],
-    "depends": [
-        "base",
-        "purchase"
-        # 'digest',
-        # when enterprise
-        # 'web_mobile'
-    ],
+    "depends": ["base", "purchase"],
     "data": ["views/inherited_po.xml"],
     "qweb": ["static/src/xml/*.xml"],
     "demo": [],
@@ -33,6 +24,6 @@
     "css": [],
     "js": [],
     "installable": True,
-    "application": True,
-    "auto_install": True,
+    "application": False,
+    "auto_install": False,
 }

@@ -12,17 +12,11 @@
     "license": "AGPL-3",
     "sequence": 2,
     "summary": """
-    Customize the purchase orders tree to decorate the lines with diferent
-    colors depending of the order status and invoiced status.
+    Customizes the list of vendor bills with different colors depending on
+whether the bill is open, paid or canceled.
     """,
-    "images": ["static/description/banner.gif"],
-    "depends": [
-        "base",
-        "purchase"
-        # 'digest',
-        # when enterprise
-        # 'web_mobile'
-    ],
+    "images": ["static/description/icon.png"],
+    "depends": ["base", "purchase"],
     "data": ["views/inherited_view.xml"],
     "qweb": ["static/src/xml/*.xml"],
     "demo": [],
@@ -31,5 +25,5 @@
     "js": [],
     "installable": True,
     "application": False,
-    "auto_install": True,
+    "auto_install": False,
 }
