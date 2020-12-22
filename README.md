@@ -6,8 +6,12 @@ Here you can find some modules that allow you to customize your Odoo installatio
 
 ## sgw_decorate_invoice_supplier_tree
 
-Customize the purchase orders tree to decorate the lines with diferent colors depending of the invoice status and invoiced status.
+Customizes the Vendor bills tree with different colors depending on whether the bill is open, paid or canceled..
 
 ## sgw_decorate_purchase_tree
 
-Customize the purchase orders tree to decorate the lines with diferent colors depending of the order status and invoiced status.
+Customize the Purchase orders tree to decorate the lines with diferent colors depending of the order status and invoiced status.
+
+## sgw_decorate_sale_order_tree
+
+Customize the Sale orders tree to decorate the lines with diferent colors depending of the order status and invoiced status.

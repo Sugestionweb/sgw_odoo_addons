@@ -7,7 +7,7 @@
 
 
 {
-    "name": "Decorate Sale Orders Tree",
+    "name": "Decorate Sale Order Tree",
     "version": "12.0.0.1.0",
     "author": "Sugestionweb.com",
     "category": "Productivity",
@@ -19,13 +19,7 @@
     depending of the order status and invoiced status.
     """,
     "images": ["static/description/banner.gif"],
-    "depends": [
-        "base",
-        "sale"
-        # 'digest',
-        # when enterprise
-        # 'web_mobile'
-    ],
+    "depends": ["base", "sale"],
     "data": ["views/inherited_so.xml"],
     "qweb": ["static/src/xml/*.xml"],
     "demo": [],
@@ -34,5 +28,5 @@
     "js": [],
     "installable": True,
     "application": False,
-    "auto_install": True,
+    "auto_install": False,
 }
