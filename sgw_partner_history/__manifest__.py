@@ -1,10 +1,10 @@
+# ------------------------------------------------------------------------------
+# (c) 2020 Sugestionweb.com -  javier@sugestionweb.com
+# License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 # Created on 2019-12-18
-# author: Javier https://www.sugestionweb.com
-# email: javier@sugestionweb.com
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
-
-# Odoo12
-
+# Author: Javier https://www.sugestionweb.com
+# Email: javier@sugestionweb.com
+# -------------------------------------------------------------------------------
 
 {
     "name": "SGW Partner History",
