@@ -3,7 +3,6 @@
 # email: javier@sugestionweb.com
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-# Odoo12
 {
     "name": "SGW Pos Product List View",
     "version": "12.0.0.1.0",
@@ -30,6 +29,6 @@
     "css": [],
     "js": [],
     "installable": True,
-    "application": True,
-    "auto_install": True,
+    "application": False,
+    "auto_install": False,
 }
