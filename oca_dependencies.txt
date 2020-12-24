@@ -1,1 +1,1 @@
-web_support https://github.com/javierobcn/website_support
+website_support https://github.com/javierobcn/website_support
