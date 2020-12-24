@@ -30,3 +30,5 @@ change is made, it adds a message in the chatter at the bottom.
 
 This module modifies the list of the products at the point of sale to view them in list
 mode, saving space without displaying the image of the product.
+
+## sgw_web_support
