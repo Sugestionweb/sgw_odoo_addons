@@ -1,5 +1,6 @@
 # Odoo SGW Add-ons
 
+![pre-commit](https://github.com/javierobcn/sgw_odoo_addons/workflows/pre-commit/badge.svg)
 [![Build Status](https://travis-ci.com/javierobcn/sgw_odoo_addons.svg?branch=12.0)](https://travis-ci.org/javierobcn/sgw_odoo_addons)
 
 Here you can find some modules that allow you to customize your Odoo installation.
