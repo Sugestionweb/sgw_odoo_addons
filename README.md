@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.com/javierobcn/sgw_odoo_addons.svg?branch=12.0)](https://travis-ci.org/javierobcn/sgw_odoo_addons)
-
 # Odoo SGW Add-ons
+
+[![Build Status](https://travis-ci.com/javierobcn/sgw_odoo_addons.svg?branch=12.0)](https://travis-ci.org/javierobcn/sgw_odoo_addons)
 
 Here you can find some modules that allow you to customize your Odoo installation.
 
